@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Diseño de 1 columna para navegadores móviles */
+        .column {
+            padding: 1rem;
+        }
+
+        /* Diseño de 2 columnas para tabletas y computadoras portátiles */
+        @media (min-width: 768px) {
+            .container {
+                display: flex;
+            }
+
+            .column {
+                flex: 1;
+                padding: 1rem;
+            }
+        }
+
+        /* Diseño de 3 columnas solo para escritorios */
+        @media (min-width: 1200px) {
+            .container {
+                display: flex;
+            }
+
+            .column {
+                flex: 1;
+                padding: 1rem;
+            }
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Diseño de 1 columna para navegadores móviles -->
+        <div class="column">
+            <h2>Contenido 1</h2>
+            <p>Contenido de la sección 1.</p>
+        </div>
+
+        <!-- Diseño de 2 columnas para tabletas y computadoras portátiles -->
+        <div class="column">
+            <h2>Contenido 2</h2>
+            <p>Contenido de la sección 2.</p>
+        </div>
+
+        <!-- Diseño de 3 columnas solo para escritorios -->
+        <div class="column">
+            <h2>Contenido 3</h2>
+            <p>Contenido de la sección 3.</p>
+        </div>
+    </div>
+    <footer>
+        <p>Derechos de autor &copy; 2023 - Mi Sitio Web</p>
+    </footer>
+</body>
+</html>
